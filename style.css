@@ -1,0 +1,135 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /*### Primary*/
+
+--Orange: hsl(25, 97%, 53%);
+
+    /*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+--fontFamily: 'Overpass', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--VeryDarkBlue);
+    font-family: var(--fontFamily);
+    font-size: 15px;
+    padding-bottom: 45px;
+}
+.main-container, .thank {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    margin-top: 150px;
+    background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+    border-radius: 14px;
+    padding-bottom: 26px;
+}
+/*img star-icon*/
+.top_img {
+    border-radius: 50%;
+    background-color: var(--DarkBlue);
+    max-width: 100%;
+    padding: .4rem;
+    margin-top: 1.3rem;
+    margin-left: 1.9rem;
+}
+h1, h2 {
+    color: var(--White);
+    margin-top: 20px;
+}
+p {
+    color: var(--LightGrey);
+    margin-top: 15px;
+    line-height: 1.8;
+}
+h1, p, h2 {
+    margin-left: 20px;
+}
+/*List*/
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+ul li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.btn {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--DarkBlue);
+    border: none;
+    color: var(--White);
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.btn:hover {
+    background-color: var(--White);
+    color: var(--VeryDarkBlue);
+  }
+.btn:focus {
+    background-color: var(--Orange);
+}
+.btn-submit {
+    width: 85%;
+    height: 2.6rem;
+    padding: 0.625rem 2rem 0.5rem;
+    border-radius: 30px;
+    margin-left: 25px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--VeryDarkBlue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: var(--White);
+    color: var(--VeryDarkBlue);
+}
+/* Thank State */
+.thank {
+    text-align: center;
+    padding-right: 15px;
+}
+.thank img {
+    display: block;
+    margin:  0 auto 1rem;
+    padding-top: 40px;
+}
+
+.thank h2 {
+    text-align: center;
+}
+.thank .orange {
+    color: var(--Orange);
+    background-color: var(--DarkBlue);
+    border-radius: 30px;
+    padding: 0.3rem 1rem 0;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
